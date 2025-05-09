@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile Card App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button class="back-btn">←</button>
+    <button class="edit-btn" onclick="openEditModal()">✏️</button>
+
+    <div class="profile">
+      <img id="avatar" src="aaaa.png" alt="Avatar">
+      <h2 id="name">Duc Tai</h2>
+      <p id="location">Can Loc-Ha Tinh</p>
+    </div>
+  </div>
+
+  
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <h3>Edit Profile</h3>
+      <input type="text" id="nameInput" placeholder="Enter name">
+      <input type="text" id="locationInput" placeholder="Enter location">
+      <input type="file" id="imageInput">
+      <button onclick="updateProfile()">Save</button>
+      <button onclick="closeEditModal()">Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
